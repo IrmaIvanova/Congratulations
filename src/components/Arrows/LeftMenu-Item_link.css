@@ -1,0 +1,23 @@
+.LeftMenu-Item_type_link,
+.RightMenu-Item_type_link {
+  display: block;
+  width: 15px;
+  height: 25px;
+  padding-left: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.LeftMenu-Item_type_link:before {
+  content: "<";
+  position: absolute;
+}
+
+.RightMenu-Item_type_link:before {
+  content: ">";
+  position: absolute;
+}
+
+/*# sourceMappingURL=LeftMenu-Item_link.css.map */

@@ -1,0 +1,13 @@
+.Header{
+    border-bottom: 1px solid rgb(204, 204, 218);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+
+}
+
+.Arrows{
+    display: flex;
+    align-items: center;
+ }

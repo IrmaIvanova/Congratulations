@@ -1,0 +1,93 @@
+@import '../../../global.scss';
+
+.LeftMenu-Item {
+  color: #94a5b5;
+  text-decoration: none;
+  transition: color $TransitionDuration $TransitionTimingFunction, margin-left .1s $TransitionTimingFunction;
+  margin-left: -100%;
+  
+  &_inited {
+    margin-left: 0;
+  }
+  
+  &:hover,
+  &_open,
+  &-Submenu {
+    background-color: #182736;
+  }
+
+  &_open,
+  &_active,
+  &:hover {
+    color: #fff;
+  }
+
+  &-Avatar,
+  &-Icon,
+  &-UserName,
+  &-Title {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &-UserName {
+    max-width: calc(100% - 80px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.7;
+  }
+  &-Title {
+    max-width: calc(100% - 43px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-Submenu {
+    transition: all $TransitionDuration $TransitionTimingFunction;
+    overflow: hidden;
+  }
+
+  &-Submenu_close {
+    height: 0px;
+  }
+
+  &-Submenu_open {
+    height: auto;
+  }
+  
+  &-Toggle {
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 218px;
+    box-sizing: border-box;
+    padding: 15px;
+
+    &:not(&_user) {
+      padding-left: 30px; 
+    }
+
+    .Icon,
+    .Avatar {
+      margin-right: 15px;
+    }
+
+    .LeftMenu-Item-Caret {
+      line-height: 23px;
+      position: absolute;
+      right: 15px;
+      margin-right: 0px;
+      transition: transform .1s $TransitionTimingFunction;
+  
+      &_open {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &_user {
+      .LeftMenu-Item-Caret {
+        line-height: 50px;
+      }
+    }
+  }
+}

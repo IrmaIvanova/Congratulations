@@ -1,0 +1,17 @@
+.App{
+  border: 10px solid #eaeff3;
+  width: 300px;
+  margin: 10% auto;
+  border-radius: 10px;
+}
+
+.Inner{
+   border: 1px solid #d1dae0;
+   box-shadow: 1px 0px 7px 0px #a79595;
+}
+
+.ContentBox{
+  padding: 10px;
+  background: #fffceb;
+  border-bottom: 1px solid rgb(204, 204, 218);
+}
